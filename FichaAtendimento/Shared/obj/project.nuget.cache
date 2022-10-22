@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jwXs+Xw5H7k0yCpPWJsxbJZezGyBwJa7UsC/cB8KcqPuXHPX5GPgfezHi+M64o6hvUONMYSZ7oPp0crIjCtYKw==",
+  "dgSpecHash": "yIg+rYVEQ/giOyxdHaNzUPzVLqHw85StsudomjZO9LiOerb1x2OcPB368L+IBvFudGAU3p6ZKLf5PjjWl1BM8g==",
   "success": true,
-  "projectFilePath": "E:\\Projetos\\ProjetosWeb\\FichaAtendimento\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
+  "projectFilePath": "G:\\Dev\\dotNet\\fichasAtendimento\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

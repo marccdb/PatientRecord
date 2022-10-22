@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <UserSecretsId>20ac5c5b-6583-4e16-97e3-181e68e47c0e</UserSecretsId>
     <ApplicationIcon>simbolopsico_I7a_icon.ico</ApplicationIcon>
   </PropertyGroup>
