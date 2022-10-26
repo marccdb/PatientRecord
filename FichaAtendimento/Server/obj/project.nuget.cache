@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MqyDxROtyff+/KLMYNzt4P00djoDSNJX+RaYN4XJwQK4bRcUNodE3xkIPywOWsNPs6XHOcbtxAV1TFoCwmrZ/w==",
+  "dgSpecHash": "NwmdWjYHWinBhQ5Xdns6w87jTy8puaTJ3lfycCEZqR9+ZJB7sUGM7XJPvp+uHCsE0tj7FttowOOkEHzErHr70g==",
   "success": true,
   "projectFilePath": "G:\\Dev\\dotNet\\fichasAtendimento\\FichaAtendimento\\Server\\FichaAtendimento.Server.csproj",
   "expectedPackageFiles": [
@@ -48,6 +48,7 @@
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.jsinterop\\6.0.10\\microsoft.jsinterop.6.0.10.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.10\\microsoft.jsinterop.webassembly.6.0.10.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\marci\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",

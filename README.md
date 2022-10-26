@@ -1,2 +1,2 @@
 # fichasAtendimento
-WebApp feito com Blazor WASM para realizar o cadastro e consulta de sessões de psicologia.
+WebApp feito com Blazor WebAssembly em .NET 6 para realizar o cadastro de clientes e consultas médicas.
