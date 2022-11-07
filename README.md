@@ -1,4 +1,7 @@
-# fichasAtendimento
+# PatientRecord
 WORK IN PROGRESS
-WebApp feito com Blazor WebAssembly em .NET 6 para realizar o cadastro de clientes e consultas médicas.
-Pipeline criada em Azure DevOps, com deplyment para o fly.io
+
+A .NET 6 Blazor Web Assembly app for anyone in the medical field who wishes to save patient data and also link with medical appointments.
+This app is suitable for any medical professional.
+
+An automated pipeline was created using Azure DevOps and it's currently being deployd to fly.io as a test.
