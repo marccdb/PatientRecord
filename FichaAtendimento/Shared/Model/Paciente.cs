@@ -13,11 +13,7 @@ namespace FichaAtendimento.Shared.Model
         public string NomePaciente { get; set; }
 
         [Column(TypeName = "date")]
-        public DateTime DataNascimento
-        {
-            get { return DateTime.Today; }
-            set { }
-        }
+        public DateTime DataNascimento {get; set;}
 
         public string Endereco { get; set; }
 

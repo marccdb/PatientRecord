@@ -57,7 +57,7 @@ else
                 <label for="Observacoes" class="control-label">General comments:</label>
                 <InputTextArea form="Observacoes" class="form-control" @bind-Value="@newFicha.Observacoes"></InputTextArea>
                 <label for="DataAtendimento" class="control-label">Session Date:</label>
-                <InputDate class="form-control" @bind-Value="@newFicha.DataAtendimento" />
+                <InputDate class="form-control" @bind-Value="@newFicha.DataAtendimento" Placeholder="@DateTime.Today" />
 
                 <div class="divSessaoPaga">
                     <label for="SessaoPaga" class="control-label label-checkbox">Paid?</label>
