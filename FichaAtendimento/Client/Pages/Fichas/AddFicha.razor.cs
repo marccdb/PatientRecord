@@ -32,7 +32,7 @@ namespace FichaAtendimento.Client.Pages.Fichas
         {
             pacientesArr = await Http.GetFromJsonAsync<Paciente[]>("api/Pacientes");
             sortedPacientesArr = pacientesArr.OrderBy(x => x.NomePaciente);
-            newFicha.DataAtendimento = DateTime.Now;
+            newFicha.DataAtendimento = DateTime.Today;
         }
     }
 }

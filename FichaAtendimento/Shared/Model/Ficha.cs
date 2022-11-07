@@ -21,13 +21,12 @@ namespace FichaAtendimento.Shared.Model
         [Required]
         public bool SessaoPaga { get; set; }
 
-        public string CondutaClinica { get; set; }
-
         [Required]
         [Column(TypeName = "date")]
         public DateTime DataAtendimento
         {
-            get; set;
+            get { return DateTime.Today; }
+            set { }
         }
 
         public string Observacoes { get; set; }

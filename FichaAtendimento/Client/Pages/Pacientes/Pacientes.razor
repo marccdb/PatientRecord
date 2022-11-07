@@ -21,15 +21,15 @@
 </style>
 
 <div style="display: inline-flex">
-    <h1 class="topMenu">Pacientes</h1>
-    <button @onclick="@NewPaciente" class="btn btn-primary topMenu">NOVO PACIENTE</button>
+    <h1 style="text-decoration:underline" class="topMenu">Patients</h1>
+    <button @onclick="@NewPaciente" class="btn btn-primary topMenu">ADD PATIENT</button>
 </div>
 
 
 @if (pacientesArr == null)
 {
     <div class="infoMsg">
-        <h3>Não há pacientes para serem exibidos.</h3>
+        <h3>There are currently no patients!</h3>
     </div>
 }
 else
@@ -37,16 +37,14 @@ else
     <table class="table">
         <thead>
             <tr>
-                <th>Paciente</th>
-                <th>Data Nascimento</th>
-                <th>Endereço</th>
-                <th>Profissão</th>
-                <th>Telefone</th>
+                <th>Patient</th>
+                <th>Birth Date</th>
+                <th>Address</th>
+                <th>Profession</th>
+                <th>Phone</th>
                 <th>Email</th>
-                <th>CPF</th>
+                <th>ID (CPF)</th>
                 <th>RG</th>
-                <th>Recibo para</th>
-                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -61,13 +59,12 @@ else
                     <td>@paciente.Email</td>
                     <td>@paciente.CPF</td>
                     <td>@paciente.RG</td>
-                    <td>@paciente.ReciboPara</td>
                     <td>
                         <a class="nav-link" href="EditPaciente/@paciente.idPaciente">
-                            <span class="oi oi-pencil" aria-hidden="true"></span> Editar
+                            <span class="oi oi-pencil" aria-hidden="true"></span> Edit
                         </a>
                         <a class="nav-link" href="RemovePaciente/@paciente.idPaciente">
-                            <span class="oi oi-trash" aria-hidden="true"></span> Remover
+                            <span class="oi oi-trash" aria-hidden="true"></span> Remove
                         </a>
 
                     </td>

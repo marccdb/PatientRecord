@@ -3,7 +3,7 @@
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
-<h3>Adicionar novo paciente</h3>
+<h3>Add a new patient</h3>
 <hr />
 
 <style>
@@ -31,15 +31,15 @@
     <div class="row coluna">
         <div class="col-md-3">
             <div class="form-group">
-                <label for="NomePaciente" class="control-label">Paciente:</label>
+                <label for="NomePaciente" class="control-label">Patient:</label>
                 <InputText form="NomePaciente" class="form-control" @bind-Value="@newPaciente.NomePaciente"></InputText>
-                <label for="DataNascimento" class="control-label">Data de Nascimento:</label>
+                <label for="DataNascimento" class="control-label">Birth Date:</label>
                 <InputDate class="form-control" @bind-Value="@newPaciente.DataNascimento" />
-                <label for="Endereco" class="control-label">Endereco:</label>
+                <label for="Endereco" class="control-label">Address:</label>
                 <InputText form="Endereco" class="form-control" @bind-Value="@newPaciente.Endereco"></InputText>
-                <label for="Profissao" class="control-label">Profissão:</label>
+                <label for="Profissao" class="control-label">Profession:</label>
                 <InputText form="Profissao" class="form-control" @bind-Value="@newPaciente.Profissao"></InputText>
-                <label for="Telefone" class="control-label">Telefone:</label>
+                <label for="Telefone" class="control-label">Phone:</label>
                 <InputText form="Telefone" class="form-control" @bind-Value="@newPaciente.Telefone"></InputText>
 
             </div>
@@ -49,20 +49,18 @@
             <div class="form-group">
                 <label for="Email" class="control-label">Email:</label>
                 <InputText form="Email" class="form-control" @bind-Value="@newPaciente.Email"></InputText>
-                <label for="CPF" class="control-label">CPF:</label>
+                <label for="CPF" class="control-label">ID (CPF):</label>
                 <InputText form="CPF" class="form-control" @bind-Value="@newPaciente.CPF"></InputText>
                 <label for="RG" class="control-label">RG:</label>
                 <InputText form="RG" class="form-control" @bind-Value="@newPaciente.RG"></InputText>
-                <label for="ReciboPara" class="control-label">Recibo Para:</label>
-                <InputText form="ReciboPara" class="form-control" @bind-Value="@newPaciente.ReciboPara"></InputText>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-4">
             <div class="form-group">
-                <button class="btn btn-primary" @onclick="@CreatePaciente" value="Save">Salvar</button>
-                <button class="btn btn-danger" @onclick="@Cancel" value="Cancel">Cancelar</button>
+                <button class="btn btn-primary" @onclick="@CreatePaciente" value="Save">Save</button>
+                <button class="btn btn-danger" @onclick="@Cancel" value="Cancel">Cancel</button>
             </div>
         </div>
     </div>

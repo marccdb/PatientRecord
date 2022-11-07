@@ -28,23 +28,21 @@
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
-                <label for="NomePaciente" class="control-label">Paciente:</label>
+                <label for="NomePaciente" class="control-label">Patient:</label>
                 <InputText form="NomePaciente" class="form-control" @bind-Value="@newFicha.NomePaciente"></InputText>
-                <label for="ResumoAtendimento" class="control-label">Resumo do Atendimento:</label>
+                <label for="ResumoAtendimento" class="control-label">Session Summary:</label>
                 <InputTextArea form="ResumoAtendimento" class="form-control" @bind-Value="@newFicha.ResumoAtendimento"></InputTextArea>
-                <label for="CondutaClínica" class="control-label">Conduta Clínica:</label>
-                <InputTextArea form="CondutaClínica" class="form-control" @bind-Value="@newFicha.CondutaClinica"></InputTextArea>
-                <label for="AbordagemProxSessao" class="control-label">Abordagem Prox. Sessão:</label>
+                <label for="AbordagemProxSessao" class="control-label">General comments:</label>
                 <InputTextArea form="Observacoes" class="form-control" @bind-Value="@newFicha.Observacoes"></InputTextArea>
-                <label for="DataAtendimento" class="control-label">Data do Atendimento:</label>
+                <label for="DataAtendimento" class="control-label">Session Date:</label>
                 <InputDate class="form-control" @bind-Value="@newFicha.DataAtendimento" />
 
                 <div class="divSessaoPaga">
-                    <label for="SessaoPaga" class="control-label label-checkbox">Sessão Paga?</label>
+                    <label for="SessaoPaga" class="control-label label-checkbox">Paid?</label>
                     <InputCheckbox @bind-Value="@newFicha.SessaoPaga" class="checkbox"></InputCheckbox>
                 </div>
                 <div class="divReciboEntregue">
-                    <label for="ReciboEntregue" class="control-label label-checkbox">Recibo Entregue?</label>
+                    <label for="ReciboEntregue" class="control-label label-checkbox">Receipt?</label>
                     <InputCheckbox @bind-Value="@newFicha.ReciboEntregue" class="checkbox"></InputCheckbox>
                 </div>
 
@@ -55,8 +53,8 @@
     <div class="row">
         <div class="col-md-4">
             <div class="form-group">
-                <button class="btn btn-primary" @onclick="@UpdateFicha" value="Update">Salvar</button>
-                <button class="btn btn-danger" @onclick="@Cancel" value="Cancel">Cancelar</button>
+                <button class="btn btn-primary" @onclick="@UpdateFicha" value="Update">Save</button>
+                <button class="btn btn-danger" @onclick="@Cancel" value="Cancel">Cancel</button>
             </div>
         </div>
     </div>

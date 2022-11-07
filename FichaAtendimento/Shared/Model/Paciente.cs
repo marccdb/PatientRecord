@@ -15,7 +15,8 @@ namespace FichaAtendimento.Shared.Model
         [Column(TypeName = "date")]
         public DateTime DataNascimento
         {
-            get; set;
+            get { return DateTime.Today; }
+            set { }
         }
 
         public string Endereco { get; set; }
@@ -29,7 +30,5 @@ namespace FichaAtendimento.Shared.Model
         public string CPF { get; set; }
 
         public string RG { get; set; }
-
-        public string ReciboPara { get; set; }
     }
 }
