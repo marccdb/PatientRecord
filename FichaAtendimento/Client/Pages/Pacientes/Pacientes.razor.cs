@@ -14,13 +14,13 @@ namespace FichaAtendimento.Client.Pages.Pacientes
 
         protected override async Task OnInitializedAsync()
         {
-            pacientesArr = await Http.GetFromJsonAsync<Paciente[]>("api/Pacientes");
+            pacientesArr = await Http.GetFromJsonAsync<Paciente[]>("api/patients");
             sortedPacientesArr = pacientesArr.OrderBy(x => x.NomePaciente);
         }
 
         private void NewPaciente()
         {
-            NavigationManager.NavigateTo("/addpaciente");
+            NavigationManager.NavigateTo("/addpatient");
         }
 
     }

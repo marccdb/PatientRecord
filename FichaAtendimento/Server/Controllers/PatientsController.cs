@@ -9,12 +9,12 @@ namespace FichaAtendimento.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PacientesController : ControllerBase
+    public class PatientsController : ControllerBase
     {
 
         private readonly IPacienteDB _pacienteDB;
 
-        public PacientesController(IPacienteDB pacienteDB)
+        public PatientsController(IPacienteDB pacienteDB)
         {
             _pacienteDB = pacienteDB;
         }

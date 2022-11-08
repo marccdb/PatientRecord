@@ -15,13 +15,13 @@ namespace FichaAtendimento.Client.Pages.Pacientes
 
         private async Task CreatePaciente()
         {
-            await Http.PostAsJsonAsync<Paciente>("api/Pacientes", newPaciente);
-            NavigationManager.NavigateTo("Pacientes");
+            await Http.PostAsJsonAsync<Paciente>("api/patients", newPaciente);
+            NavigationManager.NavigateTo("Patients");
         }
 
         private void Cancel()
         {
-            NavigationManager.NavigateTo("Pacientes");
+            NavigationManager.NavigateTo("Patients");
         }
 
     }

@@ -20,7 +20,7 @@ namespace FichaAtendimento.Client.Pages.Fichas
             pacientesArr = await Http.GetFromJsonAsync<Paciente[]>("api/Pacientes");
             sortedPacientesArr = pacientesArr.OrderBy(x => x.NomePaciente);
 
-            fichas = await Http.GetFromJsonAsync<Ficha[]>("api/Fichas");
+            fichas = await Http.GetFromJsonAsync<Ficha[]>("api/records");
 
         }
 
@@ -36,7 +36,7 @@ namespace FichaAtendimento.Client.Pages.Fichas
 
         private void NovaFicha()
         {
-            NavigationManager.NavigateTo("/addficha");
+            NavigationManager.NavigateTo("/addrecord");
         }
 
     }

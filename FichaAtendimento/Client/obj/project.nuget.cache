@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mfPGJgXSzreGMzPs9964wLrBcghDbCUlKa37GpY9pQQpwGn0Sa8+LLADqTq2J9ZNeRj+j5z8Q0FmKdpW3+/gaA==",
+  "dgSpecHash": "OQQlNnwUklhyt42/Q9jqVYF7K0H5TQwQarYzrTtW/XP4c/M7yoORogbFfVyWBzuJDT/d+k4orFuxHLB97+tE8Q==",
   "success": true,
-  "projectFilePath": "G:\\Dev\\dotNet\\fichasAtendimento\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
+  "projectFilePath": "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.10\\microsoft.aspnetcore.authorization.6.0.10.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.10\\microsoft.aspnetcore.components.6.0.10.nupkg.sha512",
@@ -34,7 +34,7 @@
     "C:\\Users\\marci\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\marci\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.10\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.10.nupkg.sha512"
+    "C:\\Users\\marci\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.11\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.11.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yIg+rYVEQ/giOyxdHaNzUPzVLqHw85StsudomjZO9LiOerb1x2OcPB368L+IBvFudGAU3p6ZKLf5PjjWl1BM8g==",
+  "dgSpecHash": "q1mlrSxhWtq8rVBrm4qEyKWNHbZGhSUzKpOY8mVOcmPuh1YoELainDY/UyxVSvVPkFBqzn663/URG9IsTcP+tQ==",
   "success": true,
-  "projectFilePath": "G:\\Dev\\dotNet\\fichasAtendimento\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
+  "projectFilePath": "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

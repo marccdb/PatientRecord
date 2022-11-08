@@ -1858,11 +1858,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Dev\\dotNet\\fichasAtendimento\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
+      "projectUniqueName": "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
       "projectName": "FichaAtendimento.Client",
-      "projectPath": "G:\\Dev\\dotNet\\fichasAtendimento\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
+      "projectPath": "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
       "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-      "outputPath": "G:\\Dev\\dotNet\\fichasAtendimento\\FichaAtendimento\\Client\\obj\\",
+      "outputPath": "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1884,8 +1884,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "G:\\Dev\\dotNet\\fichasAtendimento\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {
-              "projectPath": "G:\\Dev\\dotNet\\fichasAtendimento\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj"
+            "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {
+              "projectPath": "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj"
             }
           }
         }
@@ -1928,7 +1928,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[6.0.10, 6.0.10]"
+            "version": "[6.0.11, 6.0.11]"
           }
         ],
         "frameworkReferences": {
@@ -1936,7 +1936,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

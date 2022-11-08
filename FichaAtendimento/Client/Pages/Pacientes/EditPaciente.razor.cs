@@ -14,19 +14,19 @@ namespace FichaAtendimento.Client.Pages.Pacientes
 
         protected override async Task OnInitializedAsync()
         {
-            newPaciente = await Http.GetFromJsonAsync<Paciente>($"api/Pacientes/{id}");
+            newPaciente = await Http.GetFromJsonAsync<Paciente>($"api/patients/{id}");
         }
 
 
         private async Task UpdatePaciente()
         {
-            await Http.PutAsJsonAsync<Paciente>($"api/Pacientes/{id}", newPaciente);
-            NavigationManager.NavigateTo("Pacientes");
+            await Http.PutAsJsonAsync<Paciente>($"api/patients/{id}", newPaciente);
+            NavigationManager.NavigateTo("Patients");
         }
 
         private void Cancel()
         {
-            NavigationManager.NavigateTo("Pacientes");
+            NavigationManager.NavigateTo("Patients");
         }
 
 

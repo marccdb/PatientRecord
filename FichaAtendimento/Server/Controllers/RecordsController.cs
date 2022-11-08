@@ -9,11 +9,11 @@ namespace FichaAtendimento.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FichasController : ControllerBase
+    public class RecordsController : ControllerBase
     {
         private readonly IFichaDB _fichaDB;
 
-        public FichasController(IFichaDB fichaDB)
+        public RecordsController(IFichaDB fichaDB)
         {
             _fichaDB = fichaDB;
 

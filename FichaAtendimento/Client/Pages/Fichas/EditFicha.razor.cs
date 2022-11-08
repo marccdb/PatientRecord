@@ -13,19 +13,19 @@ namespace FichaAtendimento.Client.Pages.Fichas
 
         protected override async Task OnInitializedAsync()
         {
-            newFicha = await Http.GetFromJsonAsync<Ficha>($"api/Fichas/{id}");
+            newFicha = await Http.GetFromJsonAsync<Ficha>($"api/records/{id}");
         }
 
 
         private async Task UpdateFicha()
         {
-            await Http.PutAsJsonAsync<Ficha>($"api/Fichas/{id}", newFicha);
-            NavigationManager.NavigateTo("fichasatendimento");
+            await Http.PutAsJsonAsync<Ficha>($"api/records/{id}", newFicha);
+            NavigationManager.NavigateTo("records");
         }
 
         private void Cancel()
         {
-            NavigationManager.NavigateTo("fichasatendimento");
+            NavigationManager.NavigateTo("records");
         }
 
     }

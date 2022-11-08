@@ -1,9 +1,9 @@
-﻿@page "/Addficha"
+﻿@page "/addrecord"
 @using FichaAtendimento.Shared.Model
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
-<h3>Add new record</h3>
+<h2>Add new record</h2>
 <hr />
 
 <style>
@@ -57,7 +57,7 @@ else
                 <label for="Observacoes" class="control-label">General comments:</label>
                 <InputTextArea form="Observacoes" class="form-control" @bind-Value="@newFicha.Observacoes"></InputTextArea>
                 <label for="DataAtendimento" class="control-label">Session Date:</label>
-                <InputDate class="form-control" @bind-Value="@newFicha.DataAtendimento" Placeholder="@DateTime.Today" />
+                <InputDate class="form-control" @bind-Value="@newFicha.DataAtendimento" placeholder="@DateTime.Today" />
 
                 <div class="divSessaoPaga">
                     <label for="SessaoPaga" class="control-label label-checkbox">Paid?</label>
