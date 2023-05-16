@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj": {}
+    "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj": {}
   },
   "projects": {
-    "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj": {
+    "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
+        "projectUniqueName": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
         "projectName": "FichaAtendimento.Client",
-        "projectPath": "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
+        "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
         "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\obj\\",
+        "outputPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Users\\marci\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +35,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {
-                "projectPath": "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj"
+              "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {
+                "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj"
               }
             }
           }
@@ -51,16 +53,16 @@
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.5, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.5, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             }
           },
           "imports": [
@@ -77,7 +79,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[7.0.0, 7.0.0]"
+              "version": "[7.0.5, 7.0.5]"
             }
           ],
           "frameworkReferences": {
@@ -85,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -94,20 +96,22 @@
         }
       }
     },
-    "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {
+    "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
+        "projectUniqueName": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
         "projectName": "FichaAtendimento.Shared",
-        "projectPath": "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
+        "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
         "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "G:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\obj\\",
+        "outputPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Users\\marci\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -150,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
