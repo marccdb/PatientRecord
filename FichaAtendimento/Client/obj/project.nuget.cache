@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uesRHy4hopg=",
+  "dgSpecHash": "48q3piB8nlk=",
   "success": true,
   "projectFilePath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Client/FichaAtendimento.Client.csproj",
   "expectedPackageFiles": [
@@ -28,13 +28,10 @@
     "/home/marcio/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "/home/marcio/.nuget/packages/microsoft.jsinterop/8.0.6/microsoft.jsinterop.8.0.6.nupkg.sha512",
     "/home/marcio/.nuget/packages/microsoft.jsinterop.webassembly/8.0.6/microsoft.jsinterop.webassembly.8.0.6.nupkg.sha512",
-    "/home/marcio/.nuget/packages/microsoft.net.illink.tasks/8.0.6/microsoft.net.illink.tasks.8.0.6.nupkg.sha512",
-    "/home/marcio/.nuget/packages/microsoft.net.sdk.webassembly.pack/8.0.6/microsoft.net.sdk.webassembly.pack.8.0.6.nupkg.sha512",
     "/home/marcio/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
     "/home/marcio/.nuget/packages/system.net.http.json/8.0.0/system.net.http.json.8.0.0.nupkg.sha512",
     "/home/marcio/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
-    "/home/marcio/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
-    "/home/marcio/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.6/microsoft.netcore.app.runtime.mono.browser-wasm.8.0.6.nupkg.sha512"
+    "/home/marcio/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

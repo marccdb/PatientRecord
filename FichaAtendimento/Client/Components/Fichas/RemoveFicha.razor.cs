@@ -1,15 +1,14 @@
 ﻿using FichaAtendimento.Shared.Model;
 using Microsoft.AspNetCore.Components;
-using System.Net.Http.Json;
-using System.Threading.Tasks;
 
-namespace FichaAtendimento.Client.Pages.Fichas
+
+namespace FichaAtendimento.Client.Components.Fichas
 {
     public partial class RemoveFicha
     {
         [Parameter]
-        public string id { get; set; }
-        Ficha newFicha = new Ficha();
+        public string? id { get; set; }
+        Ficha newFicha = new();
 
         protected override async Task OnInitializedAsync()
         {

@@ -1,15 +1,13 @@
-﻿using System.Net.Http.Json;
-using System.Threading.Tasks;
-using FichaAtendimento.Shared.Model;
+﻿using FichaAtendimento.Shared.Model;
 using Microsoft.AspNetCore.Components;
 
-namespace FichaAtendimento.Client.Pages.Fichas
+namespace FichaAtendimento.Client.Components.Fichas
 {
     public partial class EditFicha
     {
         [Parameter]
-        public string id { get; set; }
-        Ficha newFicha = new Ficha();
+        public string? id { get; set; }
+        Ficha newFicha = new();
 
         protected override async Task OnInitializedAsync()
         {

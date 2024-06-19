@@ -1845,7 +1845,10 @@
         },
         "runtime": {
           "bin/placeholder/FichaAtendimento.Client.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "FichaAtendimento.Shared/1.0.0": {
         "type": "project",

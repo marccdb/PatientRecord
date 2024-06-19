@@ -1,6 +1,5 @@
 ﻿using FichaAtendimento.Server.Data;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
