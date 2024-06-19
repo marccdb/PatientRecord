@@ -1,42 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Server\\FichaAtendimento.Server.csproj": {}
+    "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Server/FichaAtendimento.Server.csproj": {}
   },
   "projects": {
-    "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj": {
+    "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Client/FichaAtendimento.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
+        "projectUniqueName": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Client/FichaAtendimento.Client.csproj",
         "projectName": "FichaAtendimento.Client",
-        "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
-        "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\obj\\",
+        "projectPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Client/FichaAtendimento.Client.csproj",
+        "packagesPath": "/home/marcio/.nuget/packages/",
+        "outputPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Client/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Users\\marci\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/marcio/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {
-                "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj"
+              "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj": {
+                "projectPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj"
               }
             }
           }
@@ -45,24 +37,41 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.Sdk.WebAssembly.Pack": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )",
+              "autoReferenced": true
             },
             "System.Net.Http.Json": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -79,7 +88,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[7.0.5, 7.0.5]"
+              "version": "[8.0.6, 8.0.6]"
             }
           ],
           "frameworkReferences": {
@@ -87,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -96,42 +105,34 @@
         }
       }
     },
-    "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Server\\FichaAtendimento.Server.csproj": {
+    "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Server/FichaAtendimento.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Server\\FichaAtendimento.Server.csproj",
+        "projectUniqueName": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Server/FichaAtendimento.Server.csproj",
         "projectName": "FichaAtendimento.Server",
-        "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Server\\FichaAtendimento.Server.csproj",
-        "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Server\\obj\\",
+        "projectPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Server/FichaAtendimento.Server.csproj",
+        "packagesPath": "/home/marcio/.nuget/packages/",
+        "outputPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Server/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Users\\marci\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/marcio/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj": {
-                "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj"
+              "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Client/FichaAtendimento.Client.csproj": {
+                "projectPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Client/FichaAtendimento.Client.csproj"
               },
-              "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {
-                "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj"
+              "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj": {
+                "projectPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj"
               }
             }
           }
@@ -140,33 +141,38 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly.Server": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[1.18.1, )"
+              "version": "[1.20.1, )"
             }
           },
           "imports": [
@@ -188,40 +194,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {
+    "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
+        "projectUniqueName": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj",
         "projectName": "FichaAtendimento.Shared",
-        "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
-        "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\obj\\",
+        "projectPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj",
+        "packagesPath": "/home/marcio/.nuget/packages/",
+        "outputPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Users\\marci\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/marcio/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -229,11 +227,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -250,7 +253,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

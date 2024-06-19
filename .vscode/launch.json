@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "C#: FichaAtendimento.Server",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/FichaAtendimento/Server/FichaAtendimento.Server.csproj",
+            "launchConfigurationId": "TargetFramework=;FichaAtendimento.Server"
+        }
+    ]
+}
