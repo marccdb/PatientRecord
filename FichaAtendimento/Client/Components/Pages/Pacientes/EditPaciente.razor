@@ -1,9 +1,9 @@
-﻿@page "/addpatient"
+﻿@page "/Editpaciente/{id}"
 @using FichaAtendimento.Shared.Model
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
-<h2>Add a new patient</h2>
+<h2>Edit patient profile</h2>
 <hr />
 
 <style>
@@ -22,9 +22,6 @@
     .checkbox {
         margin-left: 10px;
     }
-
-    .coluna {
-    }
 </style>
 
 <EditForm Model="@newPaciente" class="form">
@@ -41,16 +38,15 @@
                 <InputText form="Profissao" class="form-control" @bind-Value="@newPaciente.Profissao"></InputText>
                 <label for="Telefone" class="control-label">Phone:</label>
                 <InputText form="Telefone" class="form-control" @bind-Value="@newPaciente.Telefone"></InputText>
-
+                <label for="Email" class="control-label">Email:</label>
+                <InputText form="Email" class="form-control" @bind-Value="@newPaciente.Email"></InputText>
+                <label for="CPF" class="control-label">ID (CPF):</label>
+                <InputText form="CPF" class="form-control" @bind-Value="@newPaciente.CPF"></InputText>
             </div>
         </div>
 
         <div class="col-md-3">
             <div class="form-group">
-                <label for="Email" class="control-label">Email:</label>
-                <InputText form="Email" class="form-control" @bind-Value="@newPaciente.Email"></InputText>
-                <label for="CPF" class="control-label">ID (CPF):</label>
-                <InputText form="CPF" class="form-control" @bind-Value="@newPaciente.CPF"></InputText>
                 <label for="RG" class="control-label">RG:</label>
                 <InputText form="RG" class="form-control" @bind-Value="@newPaciente.RG"></InputText>
             </div>
@@ -59,9 +55,33 @@
     <div class="row">
         <div class="col-md-4">
             <div class="form-group">
-                <button class="btn btn-primary" @onclick="@CreatePaciente" value="Save">Save</button>
+                <button class="btn btn-primary" @onclick="@UpdatePaciente" value="Save">Save</button>
                 <button class="btn btn-danger" @onclick="@Cancel" value="Cancel">Cancel</button>
             </div>
         </div>
     </div>
 </EditForm>
+
+
+@code {
+    [Parameter]
+    public string? id { get; set; }
+    Paciente newPaciente = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        newPaciente = await Http.GetFromJsonAsync<Paciente>($"api/patients/{id}");
+    }
+
+
+    private async Task UpdatePaciente()
+    {
+        await Http.PutAsJsonAsync<Paciente>($"api/patients/{id}", newPaciente);
+        NavigationManager.NavigateTo("Patients");
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("Patients");
+    }
+}

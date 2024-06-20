@@ -1,0 +1,111 @@
+﻿@page "/addrecord"
+@using FichaAtendimento.Shared.Model
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<h2>Add new record</h2>
+<hr />
+
+<style>
+    .control-label, .divSessaoPaga {
+        margin-top: 10px;
+    }
+
+    .divReciboEntregue {
+        margin-bottom: 10px;
+    }
+
+    .checkbox {
+        margin-left: 10px;
+    }
+
+    .infoTxt {
+        color: red;
+        text-decoration: underline;
+    }
+</style>
+
+
+
+@if (pacientesArr == null)
+{
+    <div class="infoMsg">
+        <h4 class="infoTxt">*There are no patients to select. Please add a new patient first!*</h4>
+    </div>
+}
+else
+{
+    <div class="dropdown">
+        <select @bind="@newFicha.idPaciente" name="selecPaciente">
+            @foreach (var paciente in sortedPacientesArr)
+            {
+                <option value="@paciente.idPaciente">@paciente.NomePaciente</option>
+            }
+        </select>
+    </div>
+}
+
+<EditForm Model="@newFicha" class="form">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                @*<label for="NomePaciente" class="control-label">Patient:</label>
+                <InputText form="NomePaciente" class="form-control" @bind-Value="@newFicha.NomePaciente">@pacientesArr.Where(x => x.idPaciente == newFicha.idPaciente).SingleOrDefault()?.NomePaciente</InputText>*@
+                <label for="ResumoAtendimento" class="control-label">Session Summary:</label>
+                <InputTextArea form="ResumoAtendimento" class="form-control" @bind-Value="@newFicha.ResumoAtendimento"></InputTextArea>
+                <label for="Observacoes" class="control-label">General comments:</label>
+                <InputTextArea form="Observacoes" class="form-control" @bind-Value="@newFicha.Observacoes"></InputTextArea>
+                <label for="DataAtendimento" class="control-label">Session Date:</label>
+                <InputDate class="form-control" @bind-Value="@newFicha.DataAtendimento" placeholder="@DateTime.Today" />
+
+                <div class="divSessaoPaga">
+                    <label for="SessaoPaga" class="control-label label-checkbox">Paid?</label>
+                    <InputCheckbox @bind-Value="@newFicha.SessaoPaga" class="checkbox"></InputCheckbox>
+                </div>
+                <div class="divReciboEntregue">
+                    <label for="ReciboEntregue" class="control-label label-checkbox">Receipt?</label>
+                    <InputCheckbox @bind-Value="@newFicha.ReciboEntregue" class="checkbox"></InputCheckbox>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <button class="btn btn-primary" @onclick="@CreateFicha" value="Save">Save</button>
+                <button class="btn btn-danger" @onclick="@Cancel" value="Cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+</EditForm>
+
+@code {
+    Ficha newFicha = new();
+    private IEnumerable<Paciente>? sortedPacientesArr;
+
+
+    private async Task CreateFicha()
+    {
+        newFicha.NomePaciente = pacientesArr?.Where(x => x.idPaciente == newFicha.idPaciente).SingleOrDefault()?.NomePaciente;
+        await Http.PostAsJsonAsync("https://localhost:7202/api/Fichas", newFicha);
+        NavigationManager.NavigateTo("fichasatendimento");
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("fichasatendimento");
+    }
+
+
+
+    protected Paciente[]? pacientesArr;
+    protected override async Task OnInitializedAsync()
+    {
+        pacientesArr = await Http.GetFromJsonAsync<Paciente[]>("api/Pacientes");
+        sortedPacientesArr = pacientesArr?.OrderBy(x => x.NomePaciente);
+        newFicha.DataAtendimento = DateTime.Today;
+    }
+                    }

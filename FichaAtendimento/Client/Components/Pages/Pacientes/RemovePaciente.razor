@@ -22,3 +22,26 @@
     <button @onclick="@Cancel" class="botao btn btn-secondary" value="Cancel">BACK</button>
     <button @onclick="@DeletePaciente" class="botao btn btn-danger" value="Delete">REMOVE</button>
 </div>
+
+@code{
+    [Parameter]
+    public string? id { get; set; }
+    Paciente newPaciente = new Paciente();
+
+    protected override async Task OnInitializedAsync()
+    {
+        newPaciente = await Http.GetFromJsonAsync<Paciente>($"api/patients/{id}");
+    }
+
+
+    private async Task DeletePaciente()
+    {
+        await Http.DeleteAsync($"api/patients/{id}");
+        NavigationManager.NavigateTo("Patients");
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("Patients");
+    }
+}

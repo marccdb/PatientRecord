@@ -1,0 +1,49 @@
+﻿@page "/removerecord/{id}"
+@using FichaAtendimento.Shared.Model
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<style>
+    .botao {
+        margin-right: 20px;
+    }
+
+    .divBotoes {
+        margin-top: 50px;
+    }
+</style>
+
+<h2>Remove record</h2>
+<hr />
+
+<div class="row">
+    <h4>Are you sure you want to remove this record?</h4>
+</div>
+<div class="row divBotoes">
+    <button @onclick="@Cancel" class="botao btn btn-secondary" value="Cancel">BACK</button>
+    <button @onclick="@DeleteFicha" class="botao btn btn-danger" value="Delete">REMOVE</button>
+</div>
+
+
+@code {
+    [Parameter]
+    public string? id { get; set; }
+    Ficha newFicha = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        newFicha = await Http.GetFromJsonAsync<Ficha>($"api/Fichas/{id}");
+    }
+
+
+    private async Task DeleteFicha()
+    {
+        await Http.DeleteAsync($"api/Fichas/{id}");
+        NavigationManager.NavigateTo("fichasatendimento");
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("fichasatendimento");
+    }
+}

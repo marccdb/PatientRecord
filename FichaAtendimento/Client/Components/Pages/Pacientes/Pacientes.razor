@@ -19,16 +19,14 @@
         margin-bottom: 10px;
     }
 
-    .table td{
+    .table td {
         border-bottom: 1px solid black;
         vertical-align: middle;
         text-align: left;
     }
 
-    .table th{
-        
+    .table th {
     }
-
 </style>
 
 <div style="display: inline-flex">
@@ -79,8 +77,24 @@ else
                         </a>
                     </td>
                 </tr>
-                
+
             }
         </tbody>
     </table>
+}
+
+@code {
+    private Paciente[]? pacientesArr;
+    private IEnumerable<Paciente>? sortedPacientesArr;
+
+    protected override async Task OnInitializedAsync()
+    {
+        pacientesArr = await Http.GetFromJsonAsync<Paciente[]>("http://localhost:5038/api/patients");
+        sortedPacientesArr = pacientesArr.OrderBy(x => x.NomePaciente);
+    }
+
+    private void NewPaciente()
+    {
+        NavigationManager.NavigateTo("/addpatient");
+    }
 }

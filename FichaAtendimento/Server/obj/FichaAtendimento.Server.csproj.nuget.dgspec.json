@@ -1,34 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Server/FichaAtendimento.Server.csproj": {}
+    "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Server\\FichaAtendimento.Server.csproj": {}
   },
   "projects": {
-    "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Client/FichaAtendimento.Client.csproj": {
+    "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Client/FichaAtendimento.Client.csproj",
+        "projectUniqueName": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
         "projectName": "FichaAtendimento.Client",
-        "projectPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Client/FichaAtendimento.Client.csproj",
-        "packagesPath": "/home/marcio/.nuget/packages/",
-        "outputPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Client/obj/",
+        "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj",
+        "packagesPath": "C:\\Users\\marcio\\.nuget\\packages\\",
+        "outputPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/marcio/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marcio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj": {
-                "projectPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj"
+              "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {
+                "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj"
               }
             }
           }
@@ -48,15 +54,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Components.WebAssembly": {
-              "target": "Package",
-              "version": "[8.0.6, )"
-            },
-            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.6, )"
-            },
             "System.Net.Http.Json": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -81,38 +78,44 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Server/FichaAtendimento.Server.csproj": {
+    "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Server\\FichaAtendimento.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Server/FichaAtendimento.Server.csproj",
+        "projectUniqueName": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Server\\FichaAtendimento.Server.csproj",
         "projectName": "FichaAtendimento.Server",
-        "projectPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Server/FichaAtendimento.Server.csproj",
-        "packagesPath": "/home/marcio/.nuget/packages/",
-        "outputPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Server/obj/",
+        "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Server\\FichaAtendimento.Server.csproj",
+        "packagesPath": "C:\\Users\\marcio\\.nuget\\packages\\",
+        "outputPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Server\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/marcio/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marcio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Client/FichaAtendimento.Client.csproj": {
-                "projectPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Client/FichaAtendimento.Client.csproj"
+              "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj": {
+                "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Client\\FichaAtendimento.Client.csproj"
               },
-              "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj": {
-                "projectPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj"
+              "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {
+                "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj"
               }
             }
           }
@@ -132,10 +135,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
-              "target": "Package",
-              "version": "[8.0.6, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.6, )"
@@ -150,9 +149,35 @@
               "target": "Package",
               "version": "[8.0.6, )"
             },
+            "Microsoft.Extensions.ApiDescription.Server": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.6.15, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.20.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.6.2, )"
             }
           },
           "imports": [
@@ -174,27 +199,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj": {
+    "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj",
+        "projectUniqueName": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
         "projectName": "FichaAtendimento.Shared",
-        "projectPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj",
-        "packagesPath": "/home/marcio/.nuget/packages/",
-        "outputPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/obj/",
+        "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
+        "packagesPath": "C:\\Users\\marcio\\.nuget\\packages\\",
+        "outputPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/marcio/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marcio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -233,7 +264,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

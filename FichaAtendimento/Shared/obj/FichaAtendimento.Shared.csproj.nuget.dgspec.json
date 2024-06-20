@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj": {}
+    "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {}
   },
   "projects": {
-    "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj": {
+    "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj",
+        "projectUniqueName": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
         "projectName": "FichaAtendimento.Shared",
-        "projectPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/FichaAtendimento.Shared.csproj",
-        "packagesPath": "/home/marcio/.nuget/packages/",
-        "outputPath": "/run/media/marcio/F850F04F50F0165A/Dev/dotNet/PatientRecord/FichaAtendimento/Shared/obj/",
+        "projectPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\FichaAtendimento.Shared.csproj",
+        "packagesPath": "C:\\Users\\marcio\\.nuget\\packages\\",
+        "outputPath": "E:\\Dev\\dotNet\\PatientRecord\\FichaAtendimento\\Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/marcio/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\marcio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

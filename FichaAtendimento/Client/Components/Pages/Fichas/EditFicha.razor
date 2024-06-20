@@ -1,13 +1,17 @@
-﻿@page "/addrecord"
+﻿@page "/editrecord/{id}"
 @using FichaAtendimento.Shared.Model
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
-<h2>Add new record</h2>
+<h2>Editar ficha</h2>
 <hr />
 
 <style>
-    .control-label, .divSessaoPaga {
+    .control-label {
+        margin-top: 10px;
+    }
+
+    .divSessaoPaga {
         margin-top: 10px;
     }
 
@@ -18,46 +22,20 @@
     .checkbox {
         margin-left: 10px;
     }
-
-    .infoTxt {
-        color: red;
-        text-decoration: underline;
-        
-    }
 </style>
-
-
-
-@if (pacientesArr == null)
-{
-    <div class="infoMsg">
-        <h4 class="infoTxt">*There are no patients to select. Please add a new patient first!*</h4>
-    </div>
-}
-else
-{
-    <div class="dropdown">
-        <select @bind="@newFicha.idPaciente" name="selecPaciente">
-            @foreach (var paciente in sortedPacientesArr)
-            {
-                <option value="@paciente.idPaciente">@paciente.NomePaciente</option>
-            }
-        </select>
-    </div>
-}
 
 <EditForm Model="@newFicha" class="form">
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
-                @*<label for="NomePaciente" class="control-label">Patient:</label>
-                <InputText form="NomePaciente" class="form-control" @bind-Value="@newFicha.NomePaciente">@pacientesArr.Where(x => x.idPaciente == newFicha.idPaciente).SingleOrDefault()?.NomePaciente</InputText>*@
+                <label for="NomePaciente" class="control-label">Patient:</label>
+                <InputText form="NomePaciente" class="form-control" @bind-Value="@newFicha.NomePaciente"></InputText>
                 <label for="ResumoAtendimento" class="control-label">Session Summary:</label>
                 <InputTextArea form="ResumoAtendimento" class="form-control" @bind-Value="@newFicha.ResumoAtendimento"></InputTextArea>
-                <label for="Observacoes" class="control-label">General comments:</label>
+                <label for="AbordagemProxSessao" class="control-label">General comments:</label>
                 <InputTextArea form="Observacoes" class="form-control" @bind-Value="@newFicha.Observacoes"></InputTextArea>
                 <label for="DataAtendimento" class="control-label">Session Date:</label>
-                <InputDate class="form-control" @bind-Value="@newFicha.DataAtendimento" placeholder="@DateTime.Today" />
+                <InputDate class="form-control" @bind-Value="@newFicha.DataAtendimento" />
 
                 <div class="divSessaoPaga">
                     <label for="SessaoPaga" class="control-label label-checkbox">Paid?</label>
@@ -75,10 +53,34 @@ else
     <div class="row">
         <div class="col-md-4">
             <div class="form-group">
-                <button class="btn btn-primary" @onclick="@CreateFicha" value="Save">Save</button>
+                <button class="btn btn-primary" @onclick="@UpdateFicha" value="Update">Save</button>
                 <button class="btn btn-danger" @onclick="@Cancel" value="Cancel">Cancel</button>
             </div>
         </div>
     </div>
 
 </EditForm>
+
+
+                    @code{
+    [Parameter]
+    public string? id { get; set; }
+    Ficha newFicha = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        newFicha = await Http.GetFromJsonAsync<Ficha>($"api/records/{id}");
+    }
+
+
+    private async Task UpdateFicha()
+    {
+        await Http.PutAsJsonAsync($"api/records/{id}", newFicha);
+        NavigationManager.NavigateTo("records");
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("records");
+    }
+                    }
